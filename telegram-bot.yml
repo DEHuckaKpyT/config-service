@@ -32,8 +32,3 @@ telegram.bot.intro:
 
 telegram.bot.command.default: help
 
-# если вписать сюда "${meeting_id}", то падает с ошибкой "Could not resolve placeholder 'meeting_id'"
-meeting:
-  url: https://${DOMAIN_NAME:time.dev.thewhite.ru}/meeting/
-# длительность совещания в минтуах по-умолчанию
-  default-duration: 60
