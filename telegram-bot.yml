@@ -1,0 +1,33 @@
+telegram.bot.reply:
+  start:
+    # bold
+    - '*Бот для создания совещаний*'
+    -
+    # italiс
+    - '_https://thewhite.ru_'
+  start-join-meeting: 🕓 Вы можете выбрать время
+  start-join-meeting-button: 🌐 Открыть в браузере
+  start-join-meeting-button-link: ${meeting.url}${meeting_id}
+
+  timerra: Для создания совещания введите `/timerra желаемое название`
+  timerra-meeting-created: ✅ Совещание *"${meeting_name}"* создано!
+  timerra-meeting-created-button: 👬 Присоединиться
+  timerra-meeting-created-button-link: https://t.me/${telegram.bot.username}?start=meeting_${meeting_id}
+
+  notify-by-required-participants: 🙋 Все обязательные участники выбрали время в совещании *"${meeting_name}"*
+  notify-by-required-participants-button: 🕰 Забронировать время
+  notify-by-required-participants-button-link: ${meeting.url}${meeting_id}
+
+  notify-participants-about-book:
+    - 🙌 В совещании *"${meeting_name}"* выбрано время
+    - 🕗 с __*${start_time}*__ по __*${end_time}*__
+    - \(🌏 ${time_zone}\)
+  notify-participants-about-book-button: 🔍 Подробности
+  notify-participants-about-book-button-link: ${meeting.url}${meeting_id}
+
+  help: Бот для создания совещаний. По всем вопросам обращаться в https://thewhite.ru
+  default-error: Что-то пошло не так. Обратитесь в https://thewhite.ru
+
+telegram.bot.intro:
+
+telegram.bot.command.default: help
